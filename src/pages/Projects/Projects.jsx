@@ -1,4 +1,5 @@
 import { FiGithub } from "react-icons/fi";
+import { BiLogoNetlify } from "react-icons/bi";
 const projects = [
   {
     title: "E-commerce Store",
@@ -28,9 +29,9 @@ const Projects = () => {
     <div className="py-10 px-5" id="projects">
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
-        <h2 className="text-3xl font-medium text-white uppercase text-center mb-8">Projects</h2>
+        <h2 className="text-4xl font-bold text-white uppercase text-center mb-10">Projects</h2>
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-5">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -55,7 +56,7 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     className=" text-white px-4 py-2 rounded-lg hover: transition"
                   >
-                    Live Demo
+                    <BiLogoNetlify/>
                   </a>
                   <a
                     href={project.codeLink}

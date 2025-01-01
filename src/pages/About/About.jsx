@@ -1,4 +1,5 @@
 import { Link } from "react-scroll";
+
 import image from "../../assets/images/profile1.jpg";
 import { motion } from "framer-motion";
 import Reveal from "../../Animation/Reveal";
@@ -9,12 +10,12 @@ const About = () => {
       <div id="about" className=" py-16">
         {/* Title: About Me */}
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-sans font-bold text-white">About Me</h1>
+          <h1 className="text-4xl uppercase font-bold text-white">About Me</h1>
         </div>
 
         <div className="flex flex-col lg:flex-row items-center container mx-auto px-6 gap-12 lg:gap-16">
           {/* Description Section */}
-          <div className="flex-1 space-y-6 text-justify">
+          <div className="flex-1 space-y-6 py-5 mb-3 text-justify">
             <p className="text-lg text-gray-400 leading-relaxed">
               Hello! I'm Lutfur Rahman Siddiquee, a passionate software developer. 
               I develop web applications, mobile applications, and desktop applications. 

@@ -21,7 +21,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="relative bg-gray-800 text-white p-4">
+    <footer className="relative bg-navy mt-5 text-white p-4">
       <div className="max-w-6xl mx-auto text-center">
         <p>&copy; {new Date().getFullYear()} Lutfur Rahman Siddiquee. All rights reserved.</p>
       </div>

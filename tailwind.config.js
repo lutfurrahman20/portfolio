@@ -16,6 +16,7 @@ export default {
         lightestNavy : "#233554",
         mountainShadowBlue: '#101357',
         softMountainBlue: '#131743', // Custom color define
+        brightGreen : '#10B981',
       },
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],

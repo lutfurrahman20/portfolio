@@ -1,7 +1,7 @@
 import Typical from "react-typical";
 import Navbar from "../Navbar/Navbar";
 import { Link } from "react-scroll";
-import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 
 
@@ -40,53 +40,42 @@ const Banner = () => {
             {/* button on click scroll */}
             <div className="mt-8 flex gap-6">
               <Link to="projects" spy={true} smooth={true} duration={500}>
-                <button className="bg-blue-600 text-white py-2 px-6 rounded-lg hover:bg-blue-700 transition duration-300">
+                <button className="bg-brightGreen text-white py-2 px-6 rounded-lg font-semibold hover:bg-brightGreen transition duration-300">
                   View Projects
                 </button>
               </Link>
 
               <Link to="contact" spy={true} smooth={true} duration={500}>
-                <button className="bg-green-600 text-white py-2 px-6 rounded-lg hover:bg-green-700 transition duration-300">
+                <button className="bg-green-600 text-white py-2 px-6 rounded-lg font-semibold hover:bg-green-700 transition duration-300">
                   Contact Me
                 </button>
               </Link>
             </div>
             <div className="mt-8 flex gap-6 text-2xl text-gray-700">
               <a
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/in/lutfur-rahman-siddiquee-805039236/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaLinkedin className="hover:text-blue-700 transition duration-300" />
+                <FaLinkedin className="text-teal-400 hover:text-teal-700 transition duration-300" />
               </a>
               <a
-                href="https://github.com"
+                href="https://github.com/lutfurrahman20"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaGithub className="hover:text-gray-800 transition duration-300" />
+                <FaGithub className="text-teal-300 hover:text-teal-700 transition duration-300" />
               </a>
               <a
-                href="https://twitter.com"
+                href="https://x.com/LutfurR89170136"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaTwitter className="hover:text-blue-500 transition duration-300" />
+                <FaTwitter className="text-teal-400 hover:text-teal-500 transition duration-300" />
               </a>
-              <a
-                href="https://www.instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaInstagram className="hover:text-pink-500 transition duration-300" />
-              </a>
-              <a
-                href="https://www.facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaFacebook className="hover:text-blue-600 transition duration-300" />
-              </a>
+              
+                
+              
             </div>
           </div>
         </div>
