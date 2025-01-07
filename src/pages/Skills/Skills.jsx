@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import SkillsHeading from "./SkillsHeading";
+import "./Skills.css";
 
 const skillsData = {
   Web: [
@@ -33,11 +34,22 @@ const skillsData = {
 
 const Skills = () => {
   const [selectedCategory, setSelectedCategory] = useState("Web");
+  const [inView, setInView] = useState();
+    const skillRef = useRef();
+    console.log(inView)
+    useEffect(() => {
+      const observer = new IntersectionObserver((entries) => {
+        const entry = entries[0];
+        setInView(entry.isIntersecting);
+        
+      });
+      observer.observe(skillRef.current);
+    }, []);
 
   return (
-    <div id="skills">
+    <div id="skills" ref={skillRef}>
       <SkillsHeading />
-      <div className="bg-lightNavy text-white py-10 px-5 mb-5 mt-10">
+      <div className={`bg-lightNavy text-white py-10 px-5 mb-5 mt-10 ${inView ? "skill-transition" : "skill-hidden"}`}>
         {/* Category Buttons */}
         <div className="flex flex-wrap justify-start space-x-4 mb-6">
           {Object.keys(skillsData).map((category) => (

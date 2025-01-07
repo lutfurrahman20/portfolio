@@ -2,19 +2,31 @@ import Typical from "react-typical";
 import Navbar from "../Navbar/Navbar";
 import { Link } from "react-scroll";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
-
-
+import { useEffect, useRef, useState } from "react";
+import "./Banner.css";
 
 const Banner = () => {
+   const [inView, setInView] = useState();
+    const bannerRef = useRef();
+    console.log(inView)
+    useEffect(() => {
+      const observer = new IntersectionObserver((entries) => {
+        const entry = entries[0];
+        setInView(entry.isIntersecting);
+        
+      });
+      observer.observe(bannerRef.current);
+    }, []);
   return (
-    <div className="">
+    <div id="home" ref={bannerRef}>
       <Navbar />
-      <div className="container mx-auto flex flex-col md:flex-row items-center py-20 px-6 justify-center">
+      <div className={`container mx-auto flex flex-col md:flex-row items-center py-20 px-6 justify-center ${inView ? "banner-transition" : "banner-hidden"}`}>
         <div>
           {/* paragraph */}
           <div className="font-sans text-gray-200">
             <h1 className="text-4xl font-bold text-green-400">
-              Hi, I am <span className="text-white">Lutfur Rahman Siddiquee</span>
+              Hi, I am{" "}
+              <span className="text-white">Lutfur Rahman Siddiquee</span>
             </h1>
             <h2 className="text-2xl mt-4">
               I am a{" "}
@@ -34,8 +46,9 @@ const Banner = () => {
               />
             </h2>
             <h3 className="mt-4 text-lg text-gray-400">
-            Passionate React and Frontend Developer crafting user-friendly, <br /> visually stunning, and high-performance web applications <br /> with modern technologies.
-
+              Passionate React and Frontend Developer crafting user-friendly,{" "}
+              <br /> visually stunning, and high-performance web applications{" "}
+              <br /> with modern technologies.
             </h3>
             {/* button on click scroll */}
             <div className="mt-8 flex gap-6">
@@ -73,14 +86,10 @@ const Banner = () => {
               >
                 <FaTwitter className="text-teal-400 hover:text-teal-500 transition duration-300" />
               </a>
-              
-                
-              
             </div>
           </div>
         </div>
         {/* right side on picture */}
-       
       </div>
     </div>
   );
