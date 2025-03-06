@@ -6,7 +6,7 @@ const projects = [
   {
     title: "Real-Estate Site",
     description:
-      "A full-stack e-commerce platform with ReactJS and Tailwind CSS",
+      "A full-stack e-commerce platform with ReactJS and Tailwind CSS.Designed to help users browse, buy, and rent properties with ease.",
     liveLink: "https://real-estate-ecru-tau.vercel.app/",
     codeLink: "https://github.com/lutfurrahman20/real-estate",
     image: "https://i.ibb.co.com/vvXbfvrz/real-Estate.png",
@@ -21,7 +21,7 @@ const projects = [
   },
   {
     title: "portfolio",
-    description: "A portfolio build with ReactJS and Tailwind CSS",
+    description: "Developed a personal portfolio using ReactJS, JavaScript, and Tailwind CSS, ensuring a responsive and modern design",
     liveLink: "https://tailwind-portfolio-murex.vercel.app/",
     codeLink: "https://github.com/lutfurrahman20/tailwind-portfolio",
     image: "https://i.ibb.co.com/9zDm6D6/portfolio.png",
