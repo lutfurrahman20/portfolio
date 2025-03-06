@@ -4,25 +4,27 @@ import { FaGithub } from "react-icons/fa";
 
 const projects = [
   {
-    title: "E-commerce Store",
-    description: "A full-stack e-commerce platform with React, Node.js, and MongoDB.",
-    liveLink: "#",
-    codeLink: "#",
-    image: "https://via.placeholder.com/300x200?text=E-commerce+Store",
+    title: "Real-Estate Site",
+    description:
+      "A full-stack e-commerce platform with ReactJS and Tailwind CSS",
+    liveLink: "https://real-estate-ecru-tau.vercel.app/",
+    codeLink: "https://github.com/lutfurrahman20/real-estate",
+    image: "https://i.ibb.co.com/vvXbfvrz/real-Estate.png",
   },
   {
-    title: "Chat Application",
-    description: "A real-time chat application using React, Firebase, and Tailwind.",
-    liveLink: "#",
-    codeLink: "#",
-    image: "https://via.placeholder.com/300x200?text=Chat+Application",
+    title: "Doctors Appointment Application",
+    description:
+      "Implemented a responsive and modern UI using Tailwind CSS, enhancing user experience and accessibility.",
+    liveLink: "https://doctors-appointment-five.vercel.app/",
+    codeLink: "https://github.com/lutfurrahman20/doctors-appointment",
+    image: "https://i.ibb.co.com/ns87BP4b/doctor.png",
   },
   {
-    title: "Blog Platform",
-    description: "A blogging platform with rich text editing and content management.",
-    liveLink: "#",
-    codeLink: "#",
-    image: "https://via.placeholder.com/300x200?text=Blog+Platform",
+    title: "portfolio",
+    description: "A portfolio build with ReactJS and Tailwind CSS",
+    liveLink: "https://tailwind-portfolio-murex.vercel.app/",
+    codeLink: "https://github.com/lutfurrahman20/tailwind-portfolio",
+    image: "https://i.ibb.co.com/9zDm6D6/portfolio.png",
   },
 ];
 
@@ -31,7 +33,9 @@ const Projects = () => {
     <div className="py-10 px-5" id="projects">
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
-        <h2 className="text-4xl font-bold text-white uppercase text-center mb-10">Projects</h2>
+        <h2 className="text-4xl font-bold text-white uppercase text-center mb-10">
+          Projects
+        </h2>
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-5 ">
           {projects.map((project, index) => (
@@ -53,7 +57,9 @@ const Projects = () => {
               />
               <div className="p-6 hover:bg-navy">
                 {/* Project Title */}
-                <h3 className="text-xl text-white font-semibold mb-4">{project.title}</h3>
+                <h3 className="text-xl text-white font-semibold mb-4">
+                  {project.title}
+                </h3>
                 {/* Project Description */}
                 <p className="text-white mb-6">{project.description}</p>
                 {/* Action Buttons */}
@@ -74,7 +80,7 @@ const Projects = () => {
                     className="text-white px-4 py-2 rounded-lg"
                     whileHover={{ scale: 1.1 }} // Button hover animation
                   >
-                    <FaGithub className="text-2xl"/>
+                    <FaGithub className="text-2xl" />
                   </motion.a>
                 </div>
               </div>
