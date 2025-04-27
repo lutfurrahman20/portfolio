@@ -72,7 +72,7 @@ const Navbar = () => {
           >
             Contact
           </Link>
-          <a href="/cv.pdf" className="text-yellow-500 hover:text-yellow-300">
+          <a href="/../src/assets/Lutfur_Rahman_Siddiquee_Resume .pdf" className="text-yellow-500 hover:text-yellow-300">
             Resume
           </a>
         </div>

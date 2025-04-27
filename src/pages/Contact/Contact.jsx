@@ -3,6 +3,10 @@ import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { FaFacebook } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { BsTwitterX } from "react-icons/bs";
 
 const Contact = () => {
   const form = useRef();
@@ -139,7 +143,9 @@ const Contact = () => {
             will be helpful for them. If you are looking for someone like me,
             please let me know.
           </p>
-          <h3 className="text-lg text-teal-500 font-semibold mb-2">My Address:</h3>
+          <h3 className="text-lg text-teal-500 font-semibold mb-2">
+            My Address:
+          </h3>
           <address className="text-gray-600 mb-4 text-center">
             <p>House #12, Road #3, Block A</p>
             <p>Bohoddarhat, Chattogram, Bangladesh</p>
@@ -153,17 +159,17 @@ const Contact = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Facebook
+                <FaFacebook />
               </a>
             </li>
             <li>
               <a
-                href="https://www.linkedin.com/in/lutfur-rahman-siddiquee-805039236/"
+                href="www.linkedin.com/in/lutfur-rahman-siddiquee"
                 className="text-teal-700 font-medium hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                LinkedIn
+                <FaLinkedin />
               </a>
             </li>
             <li>
@@ -173,17 +179,17 @@ const Contact = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                GitHub
+                <FaGithub />
               </a>
             </li>
             <li>
               <a
-                href="https://twitter.com/yourprofile"
+                href="https://x.com/LutfurR89170136"
                 className="text-teal-500 font-medium hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Twitter
+                <BsTwitterX />
               </a>
             </li>
           </ul>
