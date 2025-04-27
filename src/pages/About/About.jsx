@@ -42,7 +42,7 @@ const About = () => {
           </p>
           {/* Buttons Section */}
           <div className="flex space-x-4">
-            <a href="/cv.pdf">
+            <a href="/src/assets/Lutfur_Rahman_Siddiquee_Resume .pdf">
               <button className="px-6 py-2 bg-green-500 text-white rounded-lg shadow-md hover:bg-green-600 transition duration-300">
                 Get Resume
               </button>

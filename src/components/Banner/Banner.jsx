@@ -66,7 +66,7 @@ const Banner = () => {
             </div>
             <div className="mt-8 flex gap-6 text-2xl text-gray-700">
               <a
-                href="https://www.linkedin.com/in/lutfur-rahman-siddiquee-805039236/"
+                href="www.linkedin.com/in/lutfur-rahman-siddiquee"
                 target="_blank"
                 rel="noopener noreferrer"
               >
