@@ -20,11 +20,11 @@ const projects = [
     image: "https://i.ibb.co.com/ns87BP4b/doctor.png",
   },
   {
-    title: "portfolio",
-    description: "Developed a personal portfolio using ReactJS, JavaScript, and Tailwind CSS, ensuring a responsive and modern design",
-    liveLink: "https://tailwind-portfolio-murex.vercel.app/",
-    codeLink: "https://github.com/lutfurrahman20/tailwind-portfolio",
-    image: "https://i.ibb.co.com/9zDm6D6/portfolio.png",
+    title: "Weather App",
+    description: "A responsive weather application built with React.js, TypeScript, Tailwind CSS, Redux Toolkit, and Vite. Users can search for any city and view real-time weather information (temperature, condition, humidity, wind speed, and icons) powered by the OpenWeatherMap API.",
+    liveLink: "https://weather-app-alpha-ten-14.vercel.app/",
+    codeLink: "https://github.com/lutfurrahman20/weather-app",
+    image: "https://i.ibb.co.com/8nM36vp9/weather.png",
   },
 ];
 
