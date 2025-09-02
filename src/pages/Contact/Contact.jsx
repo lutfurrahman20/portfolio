@@ -149,7 +149,7 @@ const Contact = () => {
           <address className="text-gray-600 mb-4 text-center">
             <p>House #12, Road #3, Block A</p>
             <p>Bohoddarhat, Chattogram, Bangladesh</p>
-            <p>Phone: +8801XXXXXXXXX</p>
+            <p>Phone: +8801690131036</p>
           </address>
           <ul className="space-x-4 flex">
             <li>
@@ -164,7 +164,7 @@ const Contact = () => {
             </li>
             <li>
               <a
-                href="www.linkedin.com/in/lutfur-rahman-siddiquee"
+                href="https://www.linkedin.com/in/lutfur-rahman-siddiquee"
                 className="text-teal-700 font-medium hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"
