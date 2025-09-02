@@ -21,7 +21,7 @@ const projects = [
   },
   {
     title: "Weather App",
-    description: "A responsive weather application built with React.js, TypeScript, Tailwind CSS, Redux Toolkit, and Vite. Users can search for any city and view real-time weather information (temperature, condition, humidity, wind speed, and icons) powered by the OpenWeatherMap API.",
+    description: "A responsive weather application built with React.js, TypeScript, Tailwind CSS, Redux Toolkit.Users can search for any city and view real-time weather information powered by the OpenWeatherMap API.",
     liveLink: "https://weather-app-alpha-ten-14.vercel.app/",
     codeLink: "https://github.com/lutfurrahman20/weather-app",
     image: "https://i.ibb.co.com/8nM36vp9/weather.png",
